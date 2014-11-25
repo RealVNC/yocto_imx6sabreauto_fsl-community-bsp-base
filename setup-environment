@@ -28,7 +28,7 @@ usage()
     echo -e "\nUsage: source $PROGNAME <build-dir>
     <build-dir>: specifies the build directory location (required)
 
-If undefined, this script will set \$MACHINE to 'imx6qsabresd'.
+If undefined, this script will set \$MACHINE to 'imx6qsabreauto'.
 "
 
     ls sources/*/conf/machine/*.conf > /dev/null 2>&1
@@ -84,7 +84,7 @@ if [ "$(whoami)" = "root" ]; then
 fi
 
 if [ -z "$MACHINE" ]; then
-    MACHINE='imx6qsabresd'
+    MACHINE='imx6qsabreauto'
 fi
 
 # Check the machine type specified
@@ -237,14 +237,7 @@ reference manual which can be found at:
 For more information about OpenEmbedded see their website:
     http://www.openembedded.org/
 
-You can now run 'bitbake <target>'
-
-Common targets are:
-    core-image-minimal
-    meta-toolchain
-    meta-toolchain-sdk
-    adt-installer
-    meta-ide-support
+You can now run 'bitbake realvnc-image'
 
 EOF
 

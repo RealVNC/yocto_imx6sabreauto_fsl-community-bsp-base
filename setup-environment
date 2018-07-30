@@ -237,7 +237,7 @@ reference manual which can be found at:
 For more information about OpenEmbedded see their website:
     http://www.openembedded.org/
 
-You can now run 'bitbake realvnc-image'
+You can now run 'bitbake vncautomotive-image'
 
 EOF
 
